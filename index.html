@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Weather App</a>
+      <div class="collapse navbar-collapse">
+        <form id="searchForm" class="d-flex ms-auto" role="search">
+          <input id="city" class="form-control me-2" type="search" placeholder="Enter city" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="my-4 text-center">Weather for <span id="mainCityName">--</span></h1>
+
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <!-- Card 1: Main Weather -->
+        <div class="col">
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">
+              <span id="temperature">--</span>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Condition: <span id="condition">--</span></li>
+              <li>Humidity: <span id="humidity">--</span></li>
+              <li>Wind Speed: <span id="wind">--</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: City Info -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">City Info</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>City Name: <span id="cityName">--</span></li>
+                <li>Country: <span id="country">--</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Extra Info -->
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">More Info</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Coordinates: <span id="coord">--</span></li>
+                <li>Feels Like: <span id="feelslike">--</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table for common cities -->
+       <h1 class="text-center my-4">Weather of Other Common Places</h1>
+<div class="table-responsive">
+    <table class="table text-center">
+    
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Temperature (°C)</th>
+              <th>Condition</th>
+              <th>Humidity (%)</th>
+              <th>Wind (kph)</th>
+            </tr>
+          </thead>
+          <tbody id="commonCitiesTable">
+            <tr data-city="Pune"><th>Pune</th><td colspan="4">Loading...</td></tr>
+            <tr data-city="Belgaum"><th>Belgaum</th><td colspan="4">Loading...</td></tr>
+            <tr data-city="Hyderabad"><th>Hyderabad</th><td colspan="4">Loading...</td></tr>
+            <tr data-city="Mysore"><th>Mysore</th><td colspan="4">Loading...</td></tr>
+           <tr data-city="Dehradun"><th>Dehradun</th><td colspan="4">Loading...</td></tr>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

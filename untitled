@@ -1,0 +1,38 @@
+<!-- /* <th style="width22%;">ForecastDate:</th> 
+<th style="width22%;">NextUpdate:</th>
+<th style="width22%;">Source:</th> 
+<th style="width22%;">Point:</th> 
+<th style="width22%;">Code:</th>
+<th style="width22%;">Name:</th> 
+<th style="width22%;">Timezone</th>
+<th style="width22%;">Coordinates:</th> */
+
+// forecastDate = response.forecastDate
+// nextUpdate= response.nextUpdate13
+// source = response.source
+// point  = response.point
+// code = response.code
+// name  = response.name
+// timezone = response.timezone
+// coordinates = response.coordinates
+
+//  <th style="width22%;">cod</th>
+// <th style="width22%;">message</th>
+// <th style="width22%;">cnt</th>
+// <th style="width22%;">list</th>
+// <th style="width22%;">id</th>
+// <th style="width22%;">name</th>
+// <th style="width22%;">coord</th>
+// <th style="width22%;">country</th>
+// <th style="width22%;">population</th>
+
+cod.innerHtml = response.cod  
+message.innerHtml = response.message
+cnt.innerHtml = response.cnt  
+list.innerHtml = response.list  
+id.innerHtml = response.id  
+name.innerHtml = response.name  
+coord.innerHtml = response.coord  
+country.innerHtml = response.country  
+population.innerHtml = response.population 
+ -->
