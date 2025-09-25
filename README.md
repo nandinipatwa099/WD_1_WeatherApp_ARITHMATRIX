@@ -36,5 +36,5 @@ It fetches real-time weather data from the **WeatherAPI (via RapidAPI)** and dis
 ## ▶️ How to Run
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/WD_1_WeatherApp_ARITHMATRIX.git
+   git clone https://github.com/nandinipatwa099/WD_1_WeatherApp_ARITHMATRIX.git
    cd WD_1_WeatherApp_ARITHMATRIX
